@@ -21,7 +21,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* CAIXA PRINCIPAL */
 
 .pagina {
     width: 90%;
@@ -42,7 +41,6 @@ body {
     position: relative;
 }
 
-/* BARRA DO MENU */
 
 nav {
     display: flex;
@@ -76,7 +74,6 @@ nav a:hover {
         0 0 10px #e52b3c;
 }
 
-/* CONTEÚDO */
 
 main {
     min-height: 530px;
@@ -94,7 +91,6 @@ main {
     max-width: 650px;
 }
 
-/* PEQUENO TÍTULO */
 
 .subtitulo {
     color: #d8b36a;
@@ -106,7 +102,6 @@ main {
     margin-bottom: 25px;
 }
 
-/* TÍTULOS */
 
 h1 {
     font-family: 'Press Start 2P', cursive;
@@ -134,7 +129,7 @@ h2 {
     margin: 20px 0;
 }
 
-/* TEXTOS */
+
 
 p {
     font-size: 16px;
@@ -146,7 +141,6 @@ p {
     color: #ddd;
 }
 
-/* BOTÕES */
 
 .botoes {
     display: flex;
@@ -186,7 +180,6 @@ p {
         inset 0 0 10px #5c0e18;
 }
 
-/* HABILIDADES */
 
 .habilidades {
     display: grid;
@@ -228,7 +221,6 @@ p {
     margin-bottom: 0;
 }
 
-/* PROJETOS */
 
 .projetos {
     display: grid;
@@ -276,7 +268,6 @@ p {
     font-size: 14px;
 }
 
-/* RODAPÉ */
 
 footer {
     padding: 20px;
@@ -298,7 +289,6 @@ footer p {
     font-size: 8px;
 }
 
-/* RESPONSIVIDADE */
 
 @media (max-width: 800px) {
 
@@ -333,4 +323,28 @@ footer p {
     .projetos {
         grid-template-columns: 1fr;
     }
+}
+
+.preview {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 20px;
+    background: #050505;
+    border: 2px solid #63202a;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s;
+}
+
+.projeto:hover .preview img {
+    transform: scale(1.05);
 }
