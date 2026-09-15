@@ -12,98 +12,122 @@
 
 <body>
 
-    <div class="pagina">
-
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="habilidades.html">HABILIDADES</a>
-            <a href="projetos.html">PROJETOS</a>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a href="index.html">Home</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="projetos.html" class="ativo">Projetos</a>
         </nav>
+    </header>
 
-        <main>
+    <main class="projetos">
 
-            <section class="conteudo">
+        <section class="projetos__cabecalho">
 
-                <p class="subtitulo">MEUS TRABALHOS</p>
+            <h1>Meus <strong>Projetos</strong></h1>
 
-                <h1>
-                    MEUS <span>PROJETOS</span>
-                </h1>
+            <p>
+                Aqui estão alguns projetos que desenvolvi durante
+                meus estudos. Cada projeto me ajudou a aprender algo
+                novo e melhorar minhas habilidades em desenvolvimento.
+            </p>
 
-                <div class="projetos">
+        </section>
 
-                    <div class="projeto">
+        <section class="projetos__lista">
 
-                        <div class="preview">
-                            <img src="imagens/cobrinha.png"
-                                alt="Pré-visualização do jogo da cobrinha">
-                        </div>
+            <article class="projeto">
 
-                        <h2>JOGO DA COBRINHA</h2>
+                <img
+                    src="./assets/cobrinha.png"
+                    alt="Prévia do jogo da cobrinha"
+                >
 
-                        <p>
-                            Jogo desenvolvido utilizando
-                            HTML, CSS e JavaScript.
-                        </p>
+                <h2>Jogo da Cobrinha</h2>
 
-                        <a href="https://primeiro-jogo-alpha.vercel.app/" class="botao">
-                            VER PROJETO
-                        </a>
+                <p>
+                    Um jogo simples de cobrinha feito com HTML,
+                    CSS e JavaScript.
+                </p>
 
-                    </div>
+                <a href="https://primeiro-jogo-alpha.vercel.app/"
+                    target="_blank">
+                    Ver projeto
+                </a>
 
-                    <div class="projeto">
+            </article>
 
-                        <div class="preview">
-                            <img src="imagens/lista-compras.png"
-                                alt="Pré-visualização da lista de compras">
-                        </div>
+            <article class="projeto">
 
-                        <h2>LISTA DE COMPRAS</h2>
+                <img
+                    src="./assets/lista-compras.png"
+                    alt="Prévia da lista de compras"
+                >
 
-                        <p>
-                            Aplicação desenvolvida para praticar
-                            JavaScript e manipulação do DOM.
-                        </p>
+                <h2>Lista de Compras</h2>
 
-                        <a href="#" class="botao">
-                            VER PROJETO
-                        </a>
+                <p>
+                    Aplicação para organizar compras, desenvolvida
+                    com HTML, CSS e JavaScript.
+                </p>
 
-                    </div>
+                <a href="https://github.com/Leonrdo77"
+                    target="_blank">
+                    Ver projeto
+                </a>
 
-                    <div class="projeto">
+            </article>
 
-                        <div class="preview">
-                            <img src="imagens/pomodoro.png"
-                                alt="Pré-visualização do Pomodoro">
-                        </div>
+            <article class="projeto">
 
-                        <h2>POMODORO</h2>
+                <img
+                    src="./assets/pomodoro.png"
+                    alt="Prévia do temporizador Pomodoro"
+                >
 
-                        <p>
-                            Temporizador desenvolvido com
-                            JavaScript para estudos.
-                        </p>
+                <h2>Pomodoro</h2>
 
-                        <a href="#" class="botao">
-                            VER PROJETO
-                        </a>
+                <p>
+                    Temporizador baseado na técnica Pomodoro,
+                    criado para ajudar na concentração durante os estudos.
+                </p>
 
-                    </div>
+                <a href="https://github.com/Leonrdo77"
+                    target="_blank">
+                    Ver projeto
+                </a>
 
-                </div>
+            </article>
 
-            </section>
+            <article class="projeto">
 
-        </main>
+                <img
+                    src="./assets/upload.png"
+                    alt="Prévia do projeto de upload de imagens"
+                >
 
-        <footer>
-            <p>LEONARDO JESUS © 2026</p>
-        </footer>
+                <h2>Upload de Imagens</h2>
 
-    </div>
+                <p>
+                    Página que permite selecionar uma imagem e
+                    visualizar uma prévia diretamente na tela.
+                </p>
 
+                <a href="https://github.com/Leonrdo77"
+                    target="_blank">
+                    Ver projeto
+                </a>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Leonardo Jesus</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
